@@ -1,8 +1,10 @@
 let now = new Date()
 
+
 let userName = prompt("Username")
 let nameLoc = document.getElementById("myName")
 nameLoc.innerHTML = userName
+
 
 const days = {
     1: "Monday",
@@ -14,10 +16,12 @@ const days = {
     7: "Sunday"
 }
 
+
 function timeDet() {
     let timeLoc = document.getElementById("myClock")
     timeLoc.innerHTML = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} ${days.now.getDay}`
 };
+
 
 function showTime() {
     setInterval(timeDet, 1000)
